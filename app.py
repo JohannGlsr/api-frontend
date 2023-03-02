@@ -20,7 +20,7 @@ phrase = st.text_input("Entrez une phrase :")
 # Ajouter un bouton pour lancer l'analyse
 if st.button("Analyser"):
     # Envoyer la phrase à l'API et récupérer la prédiction
-    response = requests.post("https://api-backend.herokuapp.com/prediction", data={'phrase': phrase})
+    response = requests.post("https://api-backend-guni-jinja-flask.herokuapp.com/", data={'phrase': phrase})
     
     # Traiter la réponse de l'API
     if response.status_code == 200:
